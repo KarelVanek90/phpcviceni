@@ -30,10 +30,10 @@
    </form>
 
    <?php
-    $isbn = ($_POST["isbn"]);
-    $jmeno = ($_POST["firstName"]);
-    $prijmeni = ($_POST["lastName"]);
-    $kniha = ($_POST["nazev"]);
+    $isbn = addslashes($_POST["isbn"]);
+    $jmeno = addslashes($_POST["firstName"]);
+    $prijmeni = addslashes($_POST["lastName"]);
+    $kniha = addslashes($_POST["nazev"]);
     
     include("./dbLogin.php");
     $con = mysqli_connect($host, $user, $password, $db);

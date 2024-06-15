@@ -34,7 +34,7 @@
 			die("Nelze se připojit k databázovému serveru!</body></html>");
 		}
       mysqli_query($con,"SET NAMES 'utf8'");
-		if (mysqli_query($con, "INSERT INTO knihy(ISBN, Jmeno, Prijmeni, Kniha, Popis) VALUES('" . 
+		if (mysqli_query($con, "INSERT INTO books(ISBN, Jmeno, Prijmeni, Kniha, Popis) VALUES('" . 
       addslashes($_POST["isbn"]) . "', '" . 
       addslashes($_POST["jmeno"]) . "', '" .
       addslashes($_POST["prijmeni"]) . "', '" .

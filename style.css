@@ -1,0 +1,19 @@
+.form-add {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-add > input,
+.form-add > textarea {
+  margin: 0px 10px 10px 5px;
+}
+
+.form-add > label {
+  margin: 1px 10px;
+}
+
+table.tabulka {
+  width: 500px;
+  border: 1px solid red;
+}

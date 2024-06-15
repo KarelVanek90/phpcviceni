@@ -24,7 +24,7 @@
       die("Nelze se připojit do databáze<body></html>");
    }
    mysqli_query($con,"SET NAMES 'utf8'");
-   $dotaz = "SELECT ISBN, Jmeno, Prijmeni, Kniha, Popis FROM knihy ";
+   $dotaz = "SELECT ISBN, Jmeno, Prijmeni, Kniha, Popis FROM books ";
    if (!($vysledek = mysqli_query($con, $dotaz))) {
       die("Nelze provést dotaz.</body></html>");
    }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Evidence knih</h1>
+    <ul>
+      <li><a href="./new.html">Vkladani novych knih</a></li>
+      <li><a href="./prehled.php">Prehled knih</a></li>
+      <li><a href="./find.php">Vyhledavani knih</a></li>
+    </ul>
+    <h2>Nova kniha</h2>
+    <form action="new.php" method="POST" class="form-add">
+      <input type="text" name="isbn" placeholder="ISBN" />
+      <input type="text" name="jmeno" placeholder="Jmeno autora" />
+      <input type="text" name="prijmeni" placeholder="Prijmeni autora" />
+      <input type="text" name="kniha" placeholder="Nazev knihy" />
+      <textarea
+        name="popis"
+        id=""
+        rows="5"
+        cols="40"
+        placeholder="Popis knihy"
+      ></textarea>
+      <input type="submit" value="Odeslat" />
+    </form>
+  </body>
+</html>
